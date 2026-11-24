@@ -1,0 +1,46 @@
+{
+ "title": "카파시의 방법론 — 한국어 데이터로 검증하다",
+ "number": "01",
+ "series": "카파시의 방법론",
+ "about": [
+  "lab:method/backpropagation",
+  "lab:method/bpe",
+  "lab:method/gpt",
+  "lab:concept/token-cost",
+  "lab:method/chatbot-pipeline"
+ ],
+ "basedOn": [
+  "karpathy-micrograd",
+  "karpathy-makemore",
+  "karpathy-minbpe",
+  "karpathy-nanogpt",
+  "karpathy-build-nanogpt",
+  "karpathy-llmc",
+  "karpathy-nanochat",
+  "nsmc"
+ ],
+ "educationalLevel": "입문",
+ "creator": [
+  {
+   "name": "안상선",
+   "role": "author"
+  }
+ ],
+ "contributor": [
+  {
+   "name": "AI 보조 제작",
+   "role": "assistant"
+  }
+ ],
+ "date": "2026-11-25",
+ "version": "1.0",
+ "language": [
+  "ko"
+ ],
+ "license": "",
+ "url": "https://adminmrobo.github.io/karpathy_method_korean/",
+ "registry": "KG_00_registry 0.2",
+ "learningResourceType": "interactive explainer",
+ "seeAlso": "",
+ "suggestedCitation": "안상선 (2026). 카파시의 방법론 — 한국어 데이터로 검증하다. 카파시의 방법론 01, v1.0."
+}

@@ -1,0 +1,2280 @@
+{
+ "version": "1.0",
+ "page": "karpathy_method_korean",
+ "nodes": [
+  {
+   "id": "lab:method/backpropagation",
+   "type": "Method",
+   "label": {
+    "ko": "역전파",
+    "en": "Backpropagation"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#c1",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "family": "nn-basics",
+   "definition": {
+    "ko": "결과에서 거꾸로 한 번 훑어 모든 손잡이(가중치)의 기울기를 한꺼번에 구하는 방법."
+   }
+  },
+  {
+   "id": "lab:method/gradient-descent",
+   "type": "Method",
+   "label": {
+    "ko": "경사하강법",
+    "en": "Gradient descent"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#c1",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "family": "optimization",
+   "definition": {
+    "ko": "손잡이를 기울기 반대 방향으로 조금씩 돌려 손실을 줄이는 방법."
+   }
+  },
+  {
+   "id": "lab:concept/learning-rate",
+   "type": "Concept",
+   "label": {
+    "ko": "학습률",
+    "en": "Learning rate"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#c1",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "family": "optimization",
+   "definition": {
+    "ko": "한 번에 손잡이를 얼마나 크게 돌릴지 정하는 걸음 크기."
+   },
+   "altLabel": {
+    "ko": [
+     "걸음 크기"
+    ]
+   }
+  },
+  {
+   "id": "lab:method/autograd-engine",
+   "type": "Method",
+   "label": {
+    "ko": "자동 미분 엔진(micrograd)",
+    "en": "Autograd engine (micrograd)"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#c1",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "family": "nn-basics",
+   "definition": {
+    "ko": "약 150줄 파이썬으로 만든, 계산 과정을 기억해 두었다가 역전파를 자동으로 해 주는 엔진."
+   }
+  },
+  {
+   "id": "lab:method/sentiment-classification",
+   "type": "Method",
+   "label": {
+    "ko": "감성 분류",
+    "en": "Sentiment classification"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#c1",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "family": "ml-basics",
+   "definition": {
+    "ko": "리뷰가 긍정인지 부정인지 맞히는 분류."
+   }
+  },
+  {
+   "id": "lab:limitation/scalar-engine-slow",
+   "type": "Limitation",
+   "label": {
+    "ko": "값을 하나씩 계산해 느림",
+    "en": "Scalar computation is slow"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#c1",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:limitation/char-feature-weak",
+   "type": "Limitation",
+   "label": {
+    "ko": "낱글자 단서로는 문장을 못 읽음",
+    "en": "Character-count features cannot read sentences"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#c1",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:concept/next-token-prediction",
+   "type": "Concept",
+   "label": {
+    "ko": "다음 글자 맞히기",
+    "en": "Next-token prediction"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#c2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "family": "generative",
+   "definition": {
+    "ko": "앞 글자들을 보고 다음 글자(조각)를 확률로 고르는 일. 언어모델의 기본 원리."
+   }
+  },
+  {
+   "id": "lab:method/bigram-model",
+   "type": "Method",
+   "label": {
+    "ko": "바이그램 모델",
+    "en": "Bigram model"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#c2",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "family": "generative",
+   "definition": {
+    "ko": "바로 앞 글자 하나만 보고 다음 글자를 세어서 고르는 가장 단순한 언어모델."
+   }
+  },
+  {
+   "id": "lab:concept/cross-entropy-loss",
+   "type": "Concept",
+   "label": {
+    "ko": "손실(교차 엔트로피)",
+    "en": "Cross-entropy loss"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#c2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "family": "nn-basics",
+   "definition": {
+    "ko": "정답 글자에 준 확률의 −log 평균. 낮을수록 잘 맞힘."
+   }
+  },
+  {
+   "id": "lab:concept/loss-as-candidates",
+   "type": "Concept",
+   "label": {
+    "ko": "후보 수로 읽는 손실",
+    "en": "Loss read as number of candidates"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#c2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "family": "nn-basics",
+   "definition": {
+    "ko": "e를 손실만큼 거듭제곱하면 몇 개 중 하나를 고르는 셈인지가 나온다."
+   }
+  },
+  {
+   "id": "lab:limitation/char-level-long",
+   "type": "Limitation",
+   "label": {
+    "ko": "글자 단위는 너무 길다",
+    "en": "Character-level sequences are long"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#c2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:method/bpe",
+   "type": "Method",
+   "label": {
+    "ko": "BPE 토크나이저",
+    "en": "Byte pair encoding tokenizer"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#c3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "llm"
+   ],
+   "family": "language",
+   "definition": {
+    "ko": "가장 자주 붙어 나오는 짝을 하나씩 합쳐 중간 크기 조각(토큰)을 만드는 방법."
+   },
+   "altLabel": {
+    "ko": [
+     "바이트 짝 병합"
+    ]
+   }
+  },
+  {
+   "id": "lab:concept/vocab-size",
+   "type": "Concept",
+   "label": {
+    "ko": "사전 크기",
+    "en": "Vocabulary size"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#c3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "llm"
+   ],
+   "family": "language",
+   "definition": {
+    "ko": "토크나이저가 가진 토큰 종류의 수. 한국어는 크게 잡아야 글자가 쪼개지지 않는다."
+   }
+  },
+  {
+   "id": "lab:concept/token-cost",
+   "type": "Concept",
+   "label": {
+    "ko": "토큰 비용",
+    "en": "Token cost"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#c3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "llm"
+   ],
+   "definition": {
+    "ko": "AI 서비스 요금과 길이 제한은 토큰 수로 센다. 같은 문장도 토크나이저에 따라 토큰 수가 달라진다."
+   }
+  },
+  {
+   "id": "lab:metric/chars-per-token",
+   "type": "Metric",
+   "label": {
+    "ko": "토큰당 글자 수(압축비)",
+    "en": "Characters per token"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#c3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "llm"
+   ],
+   "family": "language",
+   "definition": {
+    "ko": "원래 글자(바이트) 수를 토큰 수로 나눈 값."
+   }
+  },
+  {
+   "id": "lab:limitation/korean-many-chars",
+   "type": "Limitation",
+   "label": {
+    "ko": "한국어는 글자 종류가 많다",
+    "en": "Korean has many distinct characters"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#c3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "llm"
+   ]
+  },
+  {
+   "id": "lab:limitation/tokens-only",
+   "type": "Limitation",
+   "label": {
+    "ko": "조각만 있고 이어 쓰는 모델은 없음",
+    "en": "Tokens without a model"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#c3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:question/korean-vocab-size",
+   "type": "Question",
+   "label": {
+    "ko": "한국어 서비스에 알맞은 사전 크기는 얼마일까",
+    "en": "What vocabulary size suits Korean services?"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#c3",
+   "level": 3,
+   "status": "known",
+   "confidence": "medium",
+   "coverage": "mentioned",
+   "match": [],
+   "domain": [
+    "llm"
+   ]
+  },
+  {
+   "id": "lab:method/gpt",
+   "type": "Method",
+   "label": {
+    "ko": "GPT(트랜스포머 언어모델)",
+    "en": "GPT (transformer language model)"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#c4",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "family": "attention",
+   "definition": {
+    "ko": "다음 조각 맞히기를 어텐션으로 묶은, 앞 내용을 한꺼번에 보는 언어모델."
+   }
+  },
+  {
+   "id": "lab:concept/attention",
+   "type": "Concept",
+   "label": {
+    "ko": "어텐션",
+    "en": "Attention"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#c4",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "family": "attention",
+   "definition": {
+    "ko": "앞의 모든 조각을 보고 지금 필요한 조각에 무게를 더 주는 장치."
+   }
+  },
+  {
+   "id": "lab:metric/validation-loss",
+   "type": "Metric",
+   "label": {
+    "ko": "검증 손실",
+    "en": "Validation loss"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#c4",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "family": "evaluation",
+   "definition": {
+    "ko": "학습에 쓰지 않은 글로 잰 손실. 학습 손실과 함께 내려가면 외우지 않고 배우는 중."
+   }
+  },
+  {
+   "id": "lab:limitation/finished-code-opaque",
+   "type": "Limitation",
+   "label": {
+    "ko": "완성품 코드만으로는 이유가 안 보임",
+    "en": "Finished code hides the reasoning"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#c4",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:method/rebuild-from-scratch",
+   "type": "Method",
+   "label": {
+    "ko": "빈 파일부터 다시 짜기",
+    "en": "Rebuilding from scratch"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#c5",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "family": "systems",
+   "definition": {
+    "ko": "완성품을 한 단계씩 다시 만들어, 같은 결과에 도착하는지로 이해를 확인하는 방법."
+   }
+  },
+  {
+   "id": "lab:limitation/framework-hides",
+   "type": "Limitation",
+   "label": {
+    "ko": "계산이 도구(PyTorch) 안에 숨음",
+    "en": "Computation hidden inside the framework"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#c5",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:method/pure-c-training",
+   "type": "Method",
+   "label": {
+    "ko": "순수 C로 학습하기",
+    "en": "Training in pure C"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#c6",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "family": "systems",
+   "definition": {
+    "ko": "도구 없이 앞으로 계산과 거꾸로 계산을 모두 C로 직접 적어 GPT를 학습하는 방법."
+   }
+  },
+  {
+   "id": "lab:limitation/no-chatbot",
+   "type": "Limitation",
+   "label": {
+    "ko": "학습만 되고 대화는 못 함",
+    "en": "Training only, no chat"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#c6",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:method/chatbot-pipeline",
+   "type": "Method",
+   "label": {
+    "ko": "챗봇 전 공정(speedrun)",
+    "en": "End-to-end chatbot pipeline"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#c7",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "llm"
+   ],
+   "definition": {
+    "ko": "토크나이저 학습 → 사전학습 → 미세조정 → 평가 → 채팅 화면을 한 번에 돌리는 공정."
+   }
+  },
+  {
+   "id": "lab:concept/pretraining",
+   "type": "Concept",
+   "label": {
+    "ko": "사전학습",
+    "en": "Pretraining"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#c7",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "family": "language",
+   "definition": {
+    "ko": "많은 글을 미리 읽혀 다음 조각 맞히기를 익히게 하는 단계."
+   }
+  },
+  {
+   "id": "lab:concept/sft",
+   "type": "Concept",
+   "label": {
+    "ko": "미세조정(SFT)",
+    "en": "Supervised fine-tuning"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#c7",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "llm"
+   ],
+   "definition": {
+    "ko": "질문-답 예시로 대화 말투를 가르치는 단계."
+   }
+  },
+  {
+   "id": "lab:concept/gpu-rental-cost",
+   "type": "Concept",
+   "label": {
+    "ko": "GPU 대여 비용",
+    "en": "GPU rental cost"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#c7",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "llm"
+   ],
+   "definition": {
+    "ko": "GPU 수 × 시간당 대여료 × 시간."
+   }
+  },
+  {
+   "id": "lab:limitation/needs-gpu-node",
+   "type": "Limitation",
+   "label": {
+    "ko": "본 공정은 GPU 8장 노드가 필요",
+    "en": "Main pipeline needs an 8-GPU node"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#c7",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "llm"
+   ]
+  },
+  {
+   "id": "lab:dataset/nsmc",
+   "type": "Dataset",
+   "label": {
+    "ko": "네이버 영화 리뷰(NSMC)",
+    "en": "Naver Sentiment Movie Corpus"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#kosum",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "네이버 영화 리뷰 20만 개와 긍정·부정 표시를 모은 공개 데이터(CC0)."
+   }
+  },
+  {
+   "id": "lab:dataset/tiny-shakespeare",
+   "type": "Dataset",
+   "label": {
+    "ko": "셰익스피어 글 111만 자",
+    "en": "Tiny Shakespeare"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#c4",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:dataset/names",
+   "type": "Dataset",
+   "label": {
+    "ko": "영어 이름 32,033개",
+    "en": "names.txt"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#c2",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:simulation/ball-gradient",
+   "type": "Simulation",
+   "label": {
+    "ko": "공을 굴려 손잡이 맞추기",
+    "en": "Rolling-ball gradient step"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#c1",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:simulation/bigram-namer",
+   "type": "Simulation",
+   "label": {
+    "ko": "끝말잇기 수준 이름 짓기",
+    "en": "Bigram name sampler"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#c2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:simulation/bpe-merge",
+   "type": "Simulation",
+   "label": {
+    "ko": "짝 하나씩 합치기",
+    "en": "Pairwise merge demo"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#c3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:simulation/vocab-sweep",
+   "type": "Simulation",
+   "label": {
+    "ko": "사전 크기에 따라 한국어 문장 자르기",
+    "en": "Korean vocabulary-size sweep"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#c3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:simulation/loss-curves",
+   "type": "Simulation",
+   "label": {
+    "ko": "학습 곡선 비교",
+    "en": "Loss curves"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#c5",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:simulation/cost-calculator",
+   "type": "Simulation",
+   "label": {
+    "ko": "챗봇 공정 비용 계산기",
+    "en": "Pipeline cost calculator"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#c7",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:simulation/tokenizer-duel",
+   "type": "Simulation",
+   "label": {
+    "ko": "토크나이저 대결",
+    "en": "Tokenizer duel"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#duel",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:method/rustbpe",
+   "type": "Method",
+   "label": {
+    "ko": "rustbpe(빠른 BPE)",
+    "en": "rustbpe"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#duel",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai",
+    "llm"
+   ],
+   "definition": {
+    "ko": "nanochat이 쓰는, 같은 BPE 방식을 Rust로 빠르게 구현한 토크나이저 학습기."
+   }
+  },
+  {
+   "id": "lab:claim/micrograd-readme-match",
+   "type": "Claim",
+   "label": {
+    "ko": "설명서 예제 식을 micrograd로 계산하면 설명서와 같은 24.7041이 나온다",
+    "en": "micrograd reproduces README value 24.7041"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#c1",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "source": [
+    {
+     "ref": "karpathy-micrograd",
+     "loc": ""
+    }
+   ]
+  },
+  {
+   "id": "lab:claim/micrograd-korean-645",
+   "type": "Claim",
+   "label": {
+    "ko": "단서 두 개짜리 감성 분류가 처음 보는 한국어 리뷰 1,000개에서 64.5%를 맞혔다(학습 전 51.8%)",
+    "en": "Two-feature sentiment classifier: 64.5% on 1,000 unseen Korean reviews"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#c1",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "source": [
+    {
+     "ref": "nsmc",
+     "loc": ""
+    }
+   ]
+  },
+  {
+   "id": "lab:claim/makemore-names-208",
+   "type": "Claim",
+   "label": {
+    "ko": "영어 이름 makemore 트랜스포머가 2,000걸음에 시험 손실 2.08(후보 약 8개)에 도달했다",
+    "en": "makemore transformer reaches test loss 2.08 on names"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#c2",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "source": [
+    {
+     "ref": "karpathy-makemore",
+     "loc": ""
+    }
+   ]
+  },
+  {
+   "id": "lab:claim/minbpe-english-korean",
+   "type": "Claim",
+   "label": {
+    "ko": "영어로만 배운 minbpe 토크나이저는 한국어 34바이트를 34토큰으로 자른다(압축 없음)",
+    "en": "English-trained minbpe leaves Korean uncompressed (34 bytes to 34 tokens)"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#c3",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "source": [
+    {
+     "ref": "karpathy-minbpe",
+     "loc": ""
+    }
+   ]
+  },
+  {
+   "id": "lab:claim/makemore-korean-candidates",
+   "type": "Claim",
+   "label": {
+    "ko": "한국어 한 줄 평 makemore는 글자 1,791종 중 후보를 약 27개로 좁혔다(손실 3.31)",
+    "en": "Korean makemore narrows 1,791 characters to about 27 candidates"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#c2",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "source": [
+    {
+     "ref": "nsmc",
+     "loc": ""
+    }
+   ]
+  },
+  {
+   "id": "lab:claim/korean-tokens-53-11-6",
+   "type": "Claim",
+   "label": {
+    "ko": "같은 한국어 21자 문장이 영어로 배운 토크나이저로 53토큰, 한국어로 배운 같은 크기 토크나이저로 11토큰, 사전 8,192개 이상이면 6토큰",
+    "en": "Same Korean sentence: 53 / 11 / 6 tokens"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#c3",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "source": [
+    {
+     "ref": "nsmc",
+     "loc": ""
+    }
+   ]
+  },
+  {
+   "id": "lab:claim/nanogpt-cpu-187",
+   "type": "Claim",
+   "label": {
+    "ko": "설명서의 CPU 설정으로 셰익스피어 글자 모델 검증 손실 1.87(설명서 예상 약 1.88)",
+    "en": "nanoGPT CPU recipe reaches 1.87 validation loss (README ~1.88)"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#c4",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "source": [
+    {
+     "ref": "karpathy-nanogpt",
+     "loc": ""
+    }
+   ]
+  },
+  {
+   "id": "lab:claim/nanogpt-deprecated",
+   "type": "Claim",
+   "label": {
+    "ko": "nanoGPT 설명서는 2025년 11월부터 지원 종료를 알리고 nanochat을 안내한다",
+    "en": "nanoGPT README marks the repo deprecated in favour of nanochat"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#c4",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "source": [
+    {
+     "ref": "karpathy-nanogpt",
+     "loc": ""
+    }
+   ]
+  },
+  {
+   "id": "lab:claim/build-nanogpt-193",
+   "type": "Claim",
+   "label": {
+    "ko": "다시 짠 GPT가 같은 조건에서 검증 손실 1.93으로 원본(1.87) 근처에 도착했다",
+    "en": "Rebuilt GPT reaches 1.93 vs 1.87"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#c5",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "source": [
+    {
+     "ref": "karpathy-build-nanogpt",
+     "loc": ""
+    }
+   ]
+  },
+  {
+   "id": "lab:claim/llmc-compile",
+   "type": "Claim",
+   "label": {
+    "ko": "llm.c는 외부 라이브러리 없이 4.5초에 컴파일되고 400걸음에 검증 손실 4.22→2.57",
+    "en": "llm.c compiles in 4.5 s; loss 4.22→2.57"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#c6",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "source": [
+    {
+     "ref": "karpathy-llmc",
+     "loc": ""
+    }
+   ]
+  },
+  {
+   "id": "lab:claim/nanochat-48",
+   "type": "Claim",
+   "label": {
+    "ko": "nanochat 설명서는 GPT-2급 공정을 약 2시간·약 48달러로 적는다(2025년 10월 공개 때 약 4시간·약 100달러)",
+    "en": "nanochat README: ~2 h, ~$48"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#c7",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "source": [
+    {
+     "ref": "karpathy-nanochat",
+     "loc": ""
+    }
+   ]
+  },
+  {
+   "id": "lab:claim/rustbpe-korean-245",
+   "type": "Claim",
+   "label": {
+    "ko": "사전 32,768개 rustbpe가 리뷰 20만 개를 5초에 배우고 토큰당 한국어 2.45자를 담았다",
+    "en": "rustbpe 32,768 vocab: 2.45 Korean characters per token"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#c7",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "source": [
+    {
+     "ref": "nsmc",
+     "loc": ""
+    }
+   ]
+  },
+  {
+   "id": "lab:work/karpathy-micrograd",
+   "type": "Work",
+   "label": {
+    "ko": "micrograd",
+    "en": "micrograd"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#export",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:work/karpathy-makemore",
+   "type": "Work",
+   "label": {
+    "ko": "makemore",
+    "en": "makemore"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#export",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:work/karpathy-minbpe",
+   "type": "Work",
+   "label": {
+    "ko": "minbpe",
+    "en": "minbpe"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#export",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:work/karpathy-nanogpt",
+   "type": "Work",
+   "label": {
+    "ko": "nanoGPT",
+    "en": "nanoGPT"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#export",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:work/karpathy-build-nanogpt",
+   "type": "Work",
+   "label": {
+    "ko": "build-nanogpt",
+    "en": "build-nanogpt"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#export",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:work/karpathy-llmc",
+   "type": "Work",
+   "label": {
+    "ko": "llm.c",
+    "en": "llm.c"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#export",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:work/karpathy-nanochat",
+   "type": "Work",
+   "label": {
+    "ko": "nanochat",
+    "en": "nanochat"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#export",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:work/nsmc",
+   "type": "Work",
+   "label": {
+    "ko": "NSMC",
+    "en": "Naver Sentiment Movie Corpus"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#export",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:quiz/p1-c1-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "1단계 확인 퀴즈",
+    "en": "Step 1 quiz"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#c1",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:quiz/p1-c2-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "2단계 확인 퀴즈",
+    "en": "Step 2 quiz"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#c2",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:quiz/p1-c3-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "3단계 확인 퀴즈",
+    "en": "Step 3 quiz"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#c3",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:quiz/p1-c4-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "4단계 확인 퀴즈",
+    "en": "Step 4 quiz"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#c4",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:quiz/p1-c5-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "5단계 확인 퀴즈",
+    "en": "Step 5 quiz"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#c5",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:quiz/p1-c6-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "6단계 확인 퀴즈",
+    "en": "Step 6 quiz"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#c6",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:quiz/p1-c7-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "7단계 확인 퀴즈",
+    "en": "Step 7 quiz"
+   },
+   "page": "karpathy_method_korean",
+   "anchor": "#c7",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "s": "lab:method/gradient-descent",
+   "p": "lab:demonstratedBy",
+   "o": "lab:simulation/ball-gradient",
+   "anchor": "#c1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/bigram-model",
+   "p": "lab:demonstratedBy",
+   "o": "lab:simulation/bigram-namer",
+   "anchor": "#c2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/bpe",
+   "p": "lab:demonstratedBy",
+   "o": "lab:simulation/bpe-merge",
+   "anchor": "#c3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/vocab-size",
+   "p": "lab:demonstratedBy",
+   "o": "lab:simulation/vocab-sweep",
+   "anchor": "#c3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:metric/validation-loss",
+   "p": "lab:demonstratedBy",
+   "o": "lab:simulation/loss-curves",
+   "anchor": "#c5",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/gpu-rental-cost",
+   "p": "lab:demonstratedBy",
+   "o": "lab:simulation/cost-calculator",
+   "anchor": "#c7",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/bpe",
+   "p": "lab:demonstratedBy",
+   "o": "lab:simulation/tokenizer-duel",
+   "anchor": "#duel",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/bpe",
+   "p": "lab:contrastsWith",
+   "o": "lab:method/rustbpe",
+   "anchor": "#duel",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/rustbpe",
+   "p": "lab:evaluatedBy",
+   "o": "lab:metric/chars-per-token",
+   "anchor": "#duel",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/bpe",
+   "p": "lab:evaluatedOn",
+   "o": "lab:dataset/nsmc",
+   "anchor": "#duel",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/micrograd-readme-match",
+   "p": "lab:supports",
+   "o": "lab:method/autograd-engine",
+   "anchor": "#c1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/micrograd-readme-match",
+   "p": "lab:assertedIn",
+   "o": "lab:work/karpathy-micrograd",
+   "anchor": "#c1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/micrograd-korean-645",
+   "p": "lab:supports",
+   "o": "lab:method/sentiment-classification",
+   "anchor": "#c1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/micrograd-korean-645",
+   "p": "lab:assertedIn",
+   "o": "lab:work/nsmc",
+   "anchor": "#c1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/makemore-names-208",
+   "p": "lab:supports",
+   "o": "lab:concept/loss-as-candidates",
+   "anchor": "#c2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/makemore-names-208",
+   "p": "lab:assertedIn",
+   "o": "lab:work/karpathy-makemore",
+   "anchor": "#c2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/minbpe-english-korean",
+   "p": "lab:supports",
+   "o": "lab:concept/token-cost",
+   "anchor": "#c3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/minbpe-english-korean",
+   "p": "lab:assertedIn",
+   "o": "lab:work/karpathy-minbpe",
+   "anchor": "#c3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/makemore-korean-candidates",
+   "p": "lab:supports",
+   "o": "lab:concept/loss-as-candidates",
+   "anchor": "#c2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/makemore-korean-candidates",
+   "p": "lab:assertedIn",
+   "o": "lab:work/nsmc",
+   "anchor": "#c2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/korean-tokens-53-11-6",
+   "p": "lab:supports",
+   "o": "lab:concept/token-cost",
+   "anchor": "#c3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/korean-tokens-53-11-6",
+   "p": "lab:assertedIn",
+   "o": "lab:work/nsmc",
+   "anchor": "#c3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/nanogpt-cpu-187",
+   "p": "lab:supports",
+   "o": "lab:metric/validation-loss",
+   "anchor": "#c4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/nanogpt-cpu-187",
+   "p": "lab:assertedIn",
+   "o": "lab:work/karpathy-nanogpt",
+   "anchor": "#c4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/nanogpt-deprecated",
+   "p": "lab:supports",
+   "o": "lab:method/gpt",
+   "anchor": "#c4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/nanogpt-deprecated",
+   "p": "lab:assertedIn",
+   "o": "lab:work/karpathy-nanogpt",
+   "anchor": "#c4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/build-nanogpt-193",
+   "p": "lab:supports",
+   "o": "lab:method/rebuild-from-scratch",
+   "anchor": "#c5",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/build-nanogpt-193",
+   "p": "lab:assertedIn",
+   "o": "lab:work/karpathy-build-nanogpt",
+   "anchor": "#c5",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/llmc-compile",
+   "p": "lab:supports",
+   "o": "lab:method/pure-c-training",
+   "anchor": "#c6",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/llmc-compile",
+   "p": "lab:assertedIn",
+   "o": "lab:work/karpathy-llmc",
+   "anchor": "#c6",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/nanochat-48",
+   "p": "lab:supports",
+   "o": "lab:concept/gpu-rental-cost",
+   "anchor": "#c7",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/nanochat-48",
+   "p": "lab:assertedIn",
+   "o": "lab:work/karpathy-nanochat",
+   "anchor": "#c7",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/rustbpe-korean-245",
+   "p": "lab:supports",
+   "o": "lab:concept/vocab-size",
+   "anchor": "#c7",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/rustbpe-korean-245",
+   "p": "lab:assertedIn",
+   "o": "lab:work/nsmc",
+   "anchor": "#c7",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/backpropagation",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/next-token-prediction",
+   "anchor": "#c2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/next-token-prediction",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:method/bpe",
+   "anchor": "#c3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/bpe",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:method/gpt",
+   "anchor": "#c4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/gpt",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:method/rebuild-from-scratch",
+   "anchor": "#c5",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/rebuild-from-scratch",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:method/pure-c-training",
+   "anchor": "#c6",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/pure-c-training",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:method/chatbot-pipeline",
+   "anchor": "#c7",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/gradient-descent",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:method/backpropagation",
+   "anchor": "#c1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/cross-entropy-loss",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/loss-as-candidates",
+   "anchor": "#c2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/attention",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:method/gpt",
+   "anchor": "#c4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/pretraining",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/sft",
+   "anchor": "#c7",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/autograd-engine",
+   "p": "lab:hasLimitation",
+   "o": "lab:limitation/scalar-engine-slow",
+   "anchor": "#c1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/sentiment-classification",
+   "p": "lab:hasLimitation",
+   "o": "lab:limitation/char-feature-weak",
+   "anchor": "#c1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:limitation/char-feature-weak",
+   "p": "lab:addressedBy",
+   "o": "lab:concept/next-token-prediction",
+   "anchor": "#c1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/next-token-prediction",
+   "p": "lab:hasLimitation",
+   "o": "lab:limitation/char-level-long",
+   "anchor": "#c2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:limitation/char-level-long",
+   "p": "lab:addressedBy",
+   "o": "lab:method/bpe",
+   "anchor": "#c2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/bpe",
+   "p": "lab:hasLimitation",
+   "o": "lab:limitation/tokens-only",
+   "anchor": "#c3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:limitation/tokens-only",
+   "p": "lab:addressedBy",
+   "o": "lab:method/gpt",
+   "anchor": "#c3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/bpe",
+   "p": "lab:hasLimitation",
+   "o": "lab:limitation/korean-many-chars",
+   "anchor": "#c3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:limitation/korean-many-chars",
+   "p": "lab:addressedBy",
+   "o": "lab:concept/vocab-size",
+   "anchor": "#c3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/gpt",
+   "p": "lab:hasLimitation",
+   "o": "lab:limitation/finished-code-opaque",
+   "anchor": "#c4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:limitation/finished-code-opaque",
+   "p": "lab:addressedBy",
+   "o": "lab:method/rebuild-from-scratch",
+   "anchor": "#c4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/rebuild-from-scratch",
+   "p": "lab:hasLimitation",
+   "o": "lab:limitation/framework-hides",
+   "anchor": "#c5",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:limitation/framework-hides",
+   "p": "lab:addressedBy",
+   "o": "lab:method/pure-c-training",
+   "anchor": "#c5",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/pure-c-training",
+   "p": "lab:hasLimitation",
+   "o": "lab:limitation/no-chatbot",
+   "anchor": "#c6",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:limitation/no-chatbot",
+   "p": "lab:addressedBy",
+   "o": "lab:method/chatbot-pipeline",
+   "anchor": "#c6",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/chatbot-pipeline",
+   "p": "lab:hasLimitation",
+   "o": "lab:limitation/needs-gpu-node",
+   "anchor": "#c7",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/autograd-engine",
+   "p": "lab:partOf",
+   "o": "lab:method/backpropagation",
+   "anchor": "#c1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/learning-rate",
+   "p": "lab:partOf",
+   "o": "lab:method/gradient-descent",
+   "anchor": "#c1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/bigram-model",
+   "p": "lab:partOf",
+   "o": "lab:concept/next-token-prediction",
+   "anchor": "#c2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/pretraining",
+   "p": "lab:partOf",
+   "o": "lab:method/chatbot-pipeline",
+   "anchor": "#c7",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sft",
+   "p": "lab:partOf",
+   "o": "lab:method/chatbot-pipeline",
+   "anchor": "#c7",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/vocab-size",
+   "p": "lab:partOf",
+   "o": "lab:method/bpe",
+   "anchor": "#c3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/token-cost",
+   "p": "lab:relatedTo",
+   "o": "lab:metric/chars-per-token",
+   "anchor": "#c3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/vocab-size",
+   "p": "lab:raises",
+   "o": "lab:question/korean-vocab-size",
+   "anchor": "#c3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/sentiment-classification",
+   "p": "lab:evaluatedOn",
+   "o": "lab:dataset/nsmc",
+   "anchor": "#c1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/bigram-model",
+   "p": "lab:evaluatedOn",
+   "o": "lab:dataset/names",
+   "anchor": "#c2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/gpt",
+   "p": "lab:evaluatedOn",
+   "o": "lab:dataset/tiny-shakespeare",
+   "anchor": "#c4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/gpt",
+   "p": "lab:evaluatedOn",
+   "o": "lab:dataset/nsmc",
+   "anchor": "#c4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/gpt",
+   "p": "lab:evaluatedBy",
+   "o": "lab:metric/validation-loss",
+   "anchor": "#c4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/bigram-model",
+   "p": "lab:evaluatedBy",
+   "o": "lab:concept/cross-entropy-loss",
+   "anchor": "#c2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/rebuild-from-scratch",
+   "p": "lab:evaluatedBy",
+   "o": "lab:metric/validation-loss",
+   "anchor": "#c5",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/chatbot-pipeline",
+   "p": "lab:evaluatedBy",
+   "o": "lab:concept/gpu-rental-cost",
+   "anchor": "#c7",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/sentiment-classification",
+   "p": "lab:relatedTo",
+   "o": "lab:method/autograd-engine",
+   "anchor": "#c1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/backpropagation",
+   "p": "lab:broader",
+   "o": "lab:topic/backpropagation",
+   "anchor": "#c1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/gradient-descent",
+   "p": "lab:broader",
+   "o": "lab:topic/gradient-descent",
+   "anchor": "#c1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/learning-rate",
+   "p": "lab:broader",
+   "o": "lab:topic/learning-rate-schedule",
+   "anchor": "#c1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/autograd-engine",
+   "p": "lab:broader",
+   "o": "lab:topic/backpropagation",
+   "anchor": "#c1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/sentiment-classification",
+   "p": "lab:broader",
+   "o": "lab:topic/supervised-learning",
+   "anchor": "#c1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:limitation/scalar-engine-slow",
+   "p": "lab:broader",
+   "o": "lab:topic/backpropagation",
+   "anchor": "#c1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:limitation/char-feature-weak",
+   "p": "lab:broader",
+   "o": "lab:topic/feature-engineering",
+   "anchor": "#c1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/next-token-prediction",
+   "p": "lab:broader",
+   "o": "lab:topic/autoregressive-generation",
+   "anchor": "#c2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/bigram-model",
+   "p": "lab:broader",
+   "o": "lab:topic/autoregressive-generation",
+   "anchor": "#c2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/cross-entropy-loss",
+   "p": "lab:broader",
+   "o": "lab:topic/loss-function",
+   "anchor": "#c2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/loss-as-candidates",
+   "p": "lab:broader",
+   "o": "lab:topic/loss-function",
+   "anchor": "#c2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/loss-as-candidates",
+   "p": "lab:broader",
+   "o": "lab:topic/information-theory",
+   "anchor": "#c2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:limitation/char-level-long",
+   "p": "lab:broader",
+   "o": "lab:topic/tokenization",
+   "anchor": "#c2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/bpe",
+   "p": "lab:broader",
+   "o": "lab:topic/tokenization",
+   "anchor": "#c3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/vocab-size",
+   "p": "lab:broader",
+   "o": "lab:topic/tokenization",
+   "anchor": "#c3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:metric/chars-per-token",
+   "p": "lab:broader",
+   "o": "lab:topic/tokenization",
+   "anchor": "#c3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:limitation/korean-many-chars",
+   "p": "lab:broader",
+   "o": "lab:topic/tokenization",
+   "anchor": "#c3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:limitation/tokens-only",
+   "p": "lab:broader",
+   "o": "lab:topic/tokenization",
+   "anchor": "#c3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/gpt",
+   "p": "lab:broader",
+   "o": "lab:topic/transformer",
+   "anchor": "#c4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/gpt",
+   "p": "lab:broader",
+   "o": "lab:topic/pretrained-lm",
+   "anchor": "#c4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/attention",
+   "p": "lab:broader",
+   "o": "lab:topic/attention-mechanism",
+   "anchor": "#c4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:metric/validation-loss",
+   "p": "lab:broader",
+   "o": "lab:topic/data-splitting",
+   "anchor": "#c4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:metric/validation-loss",
+   "p": "lab:broader",
+   "o": "lab:topic/generalization",
+   "anchor": "#c4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:limitation/finished-code-opaque",
+   "p": "lab:broader",
+   "o": "lab:topic/reproducibility",
+   "anchor": "#c4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/rebuild-from-scratch",
+   "p": "lab:broader",
+   "o": "lab:topic/reproducibility",
+   "anchor": "#c5",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:limitation/framework-hides",
+   "p": "lab:broader",
+   "o": "lab:topic/reproducibility",
+   "anchor": "#c5",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/pure-c-training",
+   "p": "lab:broader",
+   "o": "lab:topic/deployment",
+   "anchor": "#c6",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:limitation/no-chatbot",
+   "p": "lab:broader",
+   "o": "lab:topic/pretrained-lm",
+   "anchor": "#c6",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/chatbot-pipeline",
+   "p": "lab:broader",
+   "o": "lab:topic/pretrained-lm",
+   "anchor": "#c7",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/pretraining",
+   "p": "lab:broader",
+   "o": "lab:topic/pretrained-lm",
+   "anchor": "#c7",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sft",
+   "p": "lab:broader",
+   "o": "lab:topic/transfer-learning",
+   "anchor": "#c7",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:method/rustbpe",
+   "p": "lab:broader",
+   "o": "lab:topic/tokenization",
+   "anchor": "#duel",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/token-cost",
+   "p": "lab:broader",
+   "o": "lab:topic/tokenization",
+   "anchor": "#c3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/gpu-rental-cost",
+   "p": "lab:broader",
+   "o": "lab:topic/deployment",
+   "anchor": "#c7",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:limitation/needs-gpu-node",
+   "p": "lab:broader",
+   "o": "lab:topic/deployment",
+   "anchor": "#c7",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/p1-c1-1",
+   "p": "lab:assesses",
+   "o": "lab:method/backpropagation",
+   "anchor": "#c1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/p1-c2-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/loss-as-candidates",
+   "anchor": "#c2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/p1-c3-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/token-cost",
+   "anchor": "#c3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/p1-c4-1",
+   "p": "lab:assesses",
+   "o": "lab:metric/validation-loss",
+   "anchor": "#c4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/p1-c5-1",
+   "p": "lab:assesses",
+   "o": "lab:method/rebuild-from-scratch",
+   "anchor": "#c5",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/p1-c6-1",
+   "p": "lab:assesses",
+   "o": "lab:method/pure-c-training",
+   "anchor": "#c6",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/p1-c7-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/gpu-rental-cost",
+   "anchor": "#c7",
+   "confidence": "high"
+  }
+ ]
+}

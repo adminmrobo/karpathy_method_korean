@@ -1,0 +1,16 @@
+{
+  "series_ko": "카파시의 방법론",
+  "title_ko": "카파시의 방법론 — 한국어 데이터로 검증하다",
+  "site_title": "카파시의 방법론 — 한국어 데이터로 검증하다",
+  "site_url": "https://adminmrobo.github.io/karpathy_method_korean/",
+  "ontology": {
+    "pages": [
+      {"path": "index.html", "kg": true, "export": true}
+    ],
+    "files": ["kg/kg.json", "kg/refs.json", "kg/meta.json"]
+  },
+  "i18n": {"langs": ["ko"], "pages": {"ko": 1}, "readme_langs": ["ko"]},
+  "languages": ["ko"],
+  "items": [],
+  "updated": "2026-11-25"
+}

@@ -1,0 +1,310 @@
+[
+ {
+  "id": "karpathy-micrograd",
+  "type": "software",
+  "title": "micrograd",
+  "author": [
+   {
+    "family": "Karpathy",
+    "given": "Andrej"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     2020
+    ]
+   ]
+  },
+  "URL": "https://github.com/karpathy/micrograd",
+  "container-title": "GitHub",
+  "lab": {
+   "work": "lab:work/karpathy-micrograd",
+   "role": "primary",
+   "supports": [
+    "lab:claim/micrograd-readme-match"
+   ],
+   "locs": [],
+   "verified": {
+    "title": true,
+    "author": true,
+    "year": false,
+    "container": true,
+    "pages": false,
+    "doi": false
+   },
+   "checkedBy": "저장소를 2026-11-19 내려받아 설명서(README)와 대조",
+   "checkedSource": "external"
+  }
+ },
+ {
+  "id": "karpathy-makemore",
+  "type": "software",
+  "title": "makemore",
+  "author": [
+   {
+    "family": "Karpathy",
+    "given": "Andrej"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     2022
+    ]
+   ]
+  },
+  "URL": "https://github.com/karpathy/makemore",
+  "container-title": "GitHub",
+  "lab": {
+   "work": "lab:work/karpathy-makemore",
+   "role": "primary",
+   "supports": [
+    "lab:claim/makemore-names-208"
+   ],
+   "locs": [],
+   "verified": {
+    "title": true,
+    "author": true,
+    "year": false,
+    "container": true,
+    "pages": false,
+    "doi": false
+   },
+   "checkedBy": "저장소를 2026-11-19 내려받아 설명서(README)와 대조",
+   "checkedSource": "external"
+  }
+ },
+ {
+  "id": "karpathy-minbpe",
+  "type": "software",
+  "title": "minbpe",
+  "author": [
+   {
+    "family": "Karpathy",
+    "given": "Andrej"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     2024
+    ]
+   ]
+  },
+  "URL": "https://github.com/karpathy/minbpe",
+  "container-title": "GitHub",
+  "lab": {
+   "work": "lab:work/karpathy-minbpe",
+   "role": "primary",
+   "supports": [
+    "lab:claim/minbpe-english-korean"
+   ],
+   "locs": [],
+   "verified": {
+    "title": true,
+    "author": true,
+    "year": false,
+    "container": true,
+    "pages": false,
+    "doi": false
+   },
+   "checkedBy": "저장소를 2026-11-19 내려받아 설명서(README)와 대조",
+   "checkedSource": "external"
+  }
+ },
+ {
+  "id": "karpathy-nanogpt",
+  "type": "software",
+  "title": "nanoGPT",
+  "author": [
+   {
+    "family": "Karpathy",
+    "given": "Andrej"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     2022
+    ]
+   ]
+  },
+  "URL": "https://github.com/karpathy/nanoGPT",
+  "container-title": "GitHub",
+  "lab": {
+   "work": "lab:work/karpathy-nanogpt",
+   "role": "primary",
+   "supports": [
+    "lab:claim/nanogpt-cpu-187",
+    "lab:claim/nanogpt-deprecated"
+   ],
+   "locs": [],
+   "verified": {
+    "title": true,
+    "author": true,
+    "year": false,
+    "container": true,
+    "pages": false,
+    "doi": false
+   },
+   "checkedBy": "저장소를 2026-11-19 내려받아 설명서(README)와 대조",
+   "checkedSource": "external"
+  }
+ },
+ {
+  "id": "karpathy-build-nanogpt",
+  "type": "software",
+  "title": "build-nanogpt",
+  "author": [
+   {
+    "family": "Karpathy",
+    "given": "Andrej"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     2024
+    ]
+   ]
+  },
+  "URL": "https://github.com/karpathy/build-nanogpt",
+  "container-title": "GitHub",
+  "lab": {
+   "work": "lab:work/karpathy-build-nanogpt",
+   "role": "primary",
+   "supports": [
+    "lab:claim/build-nanogpt-193"
+   ],
+   "locs": [],
+   "verified": {
+    "title": true,
+    "author": true,
+    "year": false,
+    "container": true,
+    "pages": false,
+    "doi": false
+   },
+   "checkedBy": "저장소를 2026-11-19 내려받아 설명서(README)와 대조",
+   "checkedSource": "external"
+  }
+ },
+ {
+  "id": "karpathy-llmc",
+  "type": "software",
+  "title": "llm.c",
+  "author": [
+   {
+    "family": "Karpathy",
+    "given": "Andrej"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     2024
+    ]
+   ]
+  },
+  "URL": "https://github.com/karpathy/llm.c",
+  "container-title": "GitHub",
+  "lab": {
+   "work": "lab:work/karpathy-llmc",
+   "role": "primary",
+   "supports": [
+    "lab:claim/llmc-compile"
+   ],
+   "locs": [],
+   "verified": {
+    "title": true,
+    "author": true,
+    "year": false,
+    "container": true,
+    "pages": false,
+    "doi": false
+   },
+   "checkedBy": "저장소를 2026-11-19 내려받아 설명서(README)와 대조",
+   "checkedSource": "external"
+  }
+ },
+ {
+  "id": "karpathy-nanochat",
+  "type": "software",
+  "title": "nanochat",
+  "author": [
+   {
+    "family": "Karpathy",
+    "given": "Andrej"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     2025
+    ]
+   ]
+  },
+  "URL": "https://github.com/karpathy/nanochat",
+  "container-title": "GitHub",
+  "lab": {
+   "work": "lab:work/karpathy-nanochat",
+   "role": "primary",
+   "supports": [
+    "lab:claim/nanochat-48"
+   ],
+   "locs": [],
+   "verified": {
+    "title": true,
+    "author": true,
+    "year": false,
+    "container": true,
+    "pages": false,
+    "doi": false
+   },
+   "checkedBy": "저장소를 2026-11-19 내려받아 설명서(README)와 대조",
+   "checkedSource": "external"
+  }
+ },
+ {
+  "id": "nsmc",
+  "type": "dataset",
+  "title": "Naver Sentiment Movie Corpus v1.0",
+  "author": [
+   {
+    "family": "Park",
+    "given": "Lucy"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     2015
+    ]
+   ]
+  },
+  "URL": "https://github.com/e9t/nsmc",
+  "container-title": "GitHub",
+  "lab": {
+   "work": "lab:work/nsmc",
+   "role": "data",
+   "supports": [
+    "lab:claim/micrograd-korean-645",
+    "lab:claim/makemore-korean-candidates",
+    "lab:claim/korean-tokens-53-11-6",
+    "lab:claim/rustbpe-korean-245"
+   ],
+   "locs": [],
+   "verified": {
+    "title": true,
+    "author": true,
+    "year": false,
+    "container": true,
+    "pages": false,
+    "doi": false
+   },
+   "checkedBy": "저장소를 2026-11-19 내려받아 확인 (CC0 1.0)",
+   "checkedSource": "external"
+  }
+ }
+]
