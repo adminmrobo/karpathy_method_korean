@@ -31,3 +31,17 @@ Keep the right third of the image calm for title text. No text, no letters, no l
 2. `img/cover.webp`, 공유 미리보기 `img/og.webp`, 썸네일 `img/thumb.webp`는 원래 그림에서 잘라 정수배로.
 3. `cover_manifest.json`의 `items`에 `cover`·`og`·`thumb`를 더하고 `status`를 `received` → 반영 후 `ok`.
 4. 페이지 `<head>`에 og:image를 넣는다. 그림에 `image-rendering`을 직접 걸지 않는다(px-fix v1이 맡음).
+
+## 반영 기록 (2026-11-25)
+| 키 | 받은 크기 | 원래 격자 | 반영 | 상태 |
+|---|---|---|---|---|
+| cover | 2048×1152 | 512×288 | ×3 → 1536×864 무손실 WebP `img/cover.webp` (og·thumb는 여기서 잘라 정수배) | ok |
+| sc_tokenizer | 1872×1248 | 468×312 | ×2 → 936×624 무손실 WebP, 3단계에 내장 | ok |
+| sc_duel | 1872×1248 | 468×312 | ×2 → 936×624, 대결에 내장 | ok |
+| sc_judges | 1872×1248 | 468×312 | ×2 → 936×624, 마무리에 내장 | redraw — 시아가 정장으로 그려짐(시아는 메이드복이 고정 겉모습) |
+
+### sc_judges 다시 요청 (의상만 편집)
+[첨부] sc_judges.png + refs/05_sia.png
+```
+Edit only the girl on the left (Sia, long straight black hair). Change her outfit to her fixed design from the attached reference: long-sleeved charcoal-black maid dress with a big grey ribbon and an ankle-length white frilled apron, black shoes. Keep her pose (bowing), face, hair and everything else in the image exactly the same, same 16-bit pixel-art style. No text.
+```

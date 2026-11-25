@@ -5,12 +5,147 @@
   "site_url": "https://adminmrobo.github.io/karpathy_method_korean/",
   "ontology": {
     "pages": [
-      {"path": "index.html", "kg": true, "export": true}
+      {
+        "path": "index.html",
+        "kg": true,
+        "export": true
+      }
     ],
-    "files": ["kg/kg.json", "kg/refs.json", "kg/meta.json"]
+    "files": [
+      "kg/kg.json",
+      "kg/refs.json",
+      "kg/meta.json"
+    ]
   },
-  "i18n": {"langs": ["ko"], "pages": {"ko": 1}, "readme_langs": ["ko"]},
-  "languages": ["ko"],
-  "items": [],
+  "i18n": {
+    "langs": [
+      "ko"
+    ],
+    "pages": {
+      "ko": 1
+    },
+    "readme_langs": [
+      "ko"
+    ]
+  },
+  "languages": [
+    "ko"
+  ],
+  "items": [
+    {
+      "id": "cover",
+      "role": "cover",
+      "path": "img/cover.webp",
+      "size": [
+        1536,
+        864
+      ],
+      "characters": [
+        "doc",
+        "asst",
+        "fly",
+        "jupanbot"
+      ],
+      "robot": "jupanbot-v2",
+      "prompt_en": "detailed 16-bit SNES-era pixel art, bright daytime lab seminar room, intern Sia (maid dress) and intern Moa (business suit) presenting at a blank screen with seven icons, audience Doctor, Haru, fruit-fly researcher, Jupanbot, three silhouette judges ... no text",
+      "source_of": null,
+      "status": "ok"
+    },
+    {
+      "id": "og",
+      "role": "og",
+      "path": "img/og.webp",
+      "size": [
+        1200,
+        630
+      ],
+      "characters": [
+        "doc",
+        "asst",
+        "fly",
+        "jupanbot"
+      ],
+      "robot": "jupanbot-v2",
+      "prompt_en": null,
+      "source_of": "cover",
+      "status": "ok"
+    },
+    {
+      "id": "thumb",
+      "role": "thumb",
+      "path": "img/thumb.webp",
+      "size": [
+        640,
+        360
+      ],
+      "characters": [
+        "doc",
+        "asst",
+        "fly",
+        "jupanbot"
+      ],
+      "robot": "jupanbot-v2",
+      "prompt_en": null,
+      "source_of": "cover",
+      "status": "ok"
+    },
+    {
+      "id": "sc_tokenizer",
+      "role": "scene",
+      "embedded_in": "index.html",
+      "key": "section#c3 figure.scene img",
+      "size": [
+        936,
+        624
+      ],
+      "characters": [
+        "asst",
+        "jupanbot"
+      ],
+      "robot": "jupanbot-v2",
+      "prompt_en": "detailed 16-bit SNES-era pixel art, Sia points at a whiteboard with broken small blocks and big neat blocks, Haru surprised, Jupanbot with abacus ... no text",
+      "source_of": null,
+      "status": "ok"
+    },
+    {
+      "id": "sc_duel",
+      "role": "scene",
+      "embedded_in": "index.html",
+      "key": "section#duel figure.scene img",
+      "size": [
+        936,
+        624
+      ],
+      "characters": [
+        "doc",
+        "fly",
+        "jupanbot"
+      ],
+      "robot": "jupanbot-v2",
+      "prompt_en": "detailed 16-bit SNES-era pixel art, retro RPG battle-style race on a lab desk, fruit-fly researcher reading and sorting tiles vs Jupanbot zooming, Doctor as referee ... no text",
+      "source_of": null,
+      "status": "ok"
+    },
+    {
+      "id": "sc_judges",
+      "role": "scene",
+      "embedded_in": "index.html",
+      "key": "section#outro figure.scene img",
+      "size": [
+        936,
+        624
+      ],
+      "characters": [
+        "doc",
+        "asst",
+        "fly",
+        "jupanbot"
+      ],
+      "robot": "jupanbot-v2",
+      "prompt_en": "detailed 16-bit SNES-era pixel art, Sia (maid dress) and Moa (business suit) bowing, three silhouette judges holding star cards, audience clapping ... no text",
+      "source_of": null,
+      "status": "redraw"
+    }
+  ],
   "updated": "2026-11-25"
 }
