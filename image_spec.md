@@ -38,7 +38,7 @@ Keep the right third of the image calm for title text. No text, no letters, no l
 | cover | 2048×1152 | 512×288 | ×3 → 1536×864 무손실 WebP `img/cover.webp` (og·thumb는 여기서 잘라 정수배) | ok |
 | sc_tokenizer | 1872×1248 | 468×312 | ×2 → 936×624 무손실 WebP, 3단계에 내장 | ok |
 | sc_duel | 1872×1248 | 468×312 | ×2 → 936×624, 대결에 내장 | ok |
-| sc_judges | 1872×1248 | 468×312 | ×2 → 936×624, 마무리에 내장 | redraw — 시아가 정장으로 그려짐(시아는 메이드복이 고정 겉모습) |
+| sc_judges | 1872×1248 | 468×312 | ×2 → 936×624, 마무리에 내장 | ok — v2(2026-11-25)에서 시아 의상을 메이드복으로 고쳐 다시 반영 |
 
 ### sc_judges 다시 요청 (의상만 편집)
 [첨부] sc_judges.png + refs/05_sia.png
